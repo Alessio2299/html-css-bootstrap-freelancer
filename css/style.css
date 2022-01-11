@@ -49,3 +49,28 @@ nav{
   width: 40px;
   height: 40px;
 }
+#about button:hover i{
+  color: #000 !important;
+}
+.col img:hover{
+  opacity: 0.3;
+  cursor: pointer;
+}
+.index{
+  z-index: 99;
+}
+.formfix{
+  padding: 1rem 0 !important;
+}
+.fixtextarea{
+ padding: 1rem 0 0 0!important;
+}
+.fixtext{
+  padding: 1.8rem 0 0 0 !important;
+}
+.fixtextarea:focus~label{
+  transform: scale(.85) translateY(-0.5rem) !important;
+}
+.fixtext:focus~label{
+  transform: scale(.85) translateY(-0.5rem) !important;
+}
