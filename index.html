@@ -12,13 +12,13 @@
   <body>
     <head>
       <nav class="position-fixed top-0 start-0 end-0">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container fix d-flex justify-content-between align-items-center">
           <span class="text-white fs-5 fw-bold">START BOOTSTRAP</span>
           <ul class="list-unstyled mt-3">
-            <li class="d-inline-block visually-hidden"><a href="#" class="text-decoration-none">Portfolio</a></li>
-            <li class="d-inline-block visually-hidden"><a href="#" class="text-decoration-none">About</a></li>
-            <li class="d-inline-block visually-hidden"><a href="#" class="text-decoration-none">Contact</a></li>
-            <li class="d-inline-block border rounded px-2"><a href="#" class="text-decoration-none"><i class="text-secondary fas fa-bars"></i></a></li>
+            <li class="d-md-inline-block d-none pe-3"><a href="#portfolio" class="text-decoration-none text-white">PORTFOLIO</a></li>
+            <li class="d-md-inline-block d-none pe-3"><a href="#about" class="text-decoration-none text-white">ABOUT</a></li>
+            <li class="d-md-inline-block d-none pe-3"><a href="#contact" class="text-decoration-none text-white">CONTACT</a></li>
+            <li class="d-inline-block d-sm-none border rounded px-2"><a href="#" class="text-decoration-none"><i class="text-secondary fas fa-bars"></i></a></li>
           </ul>
         </div>
       </nav>
@@ -36,7 +36,7 @@
       </div>
     </head>
     <main>
-      <section>
+      <section id="portfolio">
         <div class="container text-center pt-4 pb-4">
           <h4>PORTFOLIO</h4>
           <div class="line-star mt-3">
@@ -44,7 +44,7 @@
             <i class="fs-2 align-middle fas fa-star"></i>
             <span class="linee black d-inline-block rounded"></span>
           </div>
-          <div class="row row-cols-1">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 mx-xl-5">
             <div class="col">
               <img class="img-fluid rounded-3 my-3" src="./img/cabin.png" alt="Icona Cabina">
             </div>
@@ -66,7 +66,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section id="about">
         <div class="container text-center pt-4 pb-4">
           <h4 class="text-white">ABOUT</h4>
           <div class="line-star mt-3 mb-3">
@@ -74,7 +74,7 @@
             <i class="fs-2 text-white align-middle fas fa-star"></i>
             <span class="little-linee white d-inline-block rounded"></span>
           </div>
-          <div class="row row-cols-1 mx-5 text-start">
+          <div class="row row-cols-1 row-cols-md-2 mx-5 px-xl-5 text-start">
             <div class="col">
               <p class="text-white">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional LEss stylesheet for easy customization.</p>
             </div>
@@ -82,10 +82,10 @@
               <p class="text-white">Whether you're a stundent looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
             </div>
           </div>
-          <button type="button" class="btn btn-outline-light"><i class="text-white me-2 fas fa-download"></i>Download</button>
+          <button type="button" class="mt-3 btn btn-outline-light"><i class="text-white me-2 fas fa-download"></i>Download</button>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact">
         <div class="container text-center pt-4 pb-4">
           <h4>CONTACT ME</h4>
           <div class="line-star mt-3 mb-3">
@@ -119,7 +119,7 @@
     </main>
     <footer class="background">
       <div class="container">
-        <div class="row text-center row-cols-1 mx-3">
+        <div class="row text-center row-cols-1 row-cols-md-3 mx-3 py-4">
           <div class="col text-white my-3">
             <span class="d-block">LOCATION</span>
             <span>2215 John Daniel Drive Clark, MO 54243</span>

@@ -1,8 +1,11 @@
 nav{
   background-color: rgb(44, 61, 80);
 }
+.fix{
+  height: 60px;
+}
 .jumbotron,
-.about{
+#about{
   background-color: rgb(27, 187, 156);
 }
 .linee{
