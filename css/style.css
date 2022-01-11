@@ -1,7 +1,8 @@
 nav{
   background-color: rgb(44, 61, 80);
 }
-.jumbotron{
+.jumbotron,
+.about{
   background-color: rgb(27, 187, 156);
 }
 .linee{
@@ -16,4 +17,8 @@ nav{
 }
 .black{
   background-color: #000;
+}
+.little-linee{
+  width: 10%;
+  height: 4px;
 }
