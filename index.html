@@ -11,14 +11,14 @@
   </head>
   <body>
     <header>
-      <nav class="index position-fixed plus_index top-0 start-0 end-0">
-        <div class="container fix d-flex justify-content-between align-items-center">
+      <nav class="fixed-top">
+        <div class="container-sm d-flex justify-content-between align-items-center">
           <span class="text-white fs-5 fw-bold">START BOOTSTRAP</span>
           <ul class="list-unstyled mt-3">
-            <li class="d-md-inline-block d-none pe-3"><a href="#portfolio" class="text-decoration-none text-white">PORTFOLIO</a></li>
-            <li class="d-md-inline-block d-none pe-3"><a href="#about" class="text-decoration-none text-white">ABOUT</a></li>
-            <li class="d-md-inline-block d-none pe-3"><a href="#contact" class="text-decoration-none text-white">CONTACT</a></li>
-            <li class="d-inline-block d-sm-none border rounded px-2"><a href="#" class="text-decoration-none"><i class="text-secondary fas fa-bars"></i></a></li>
+            <li class="li-green d-sm-inline-block d-none pe-3"><a href="#portfolio" class="text-decoration-none text-white">PORTFOLIO</a></li>
+            <li class="li-green d-sm-inline-block d-none pe-3"><a href="#about" class="text-decoration-none text-white">ABOUT</a></li>
+            <li class="li-green d-sm-inline-block d-none pe-3"><a href="#contact" class="text-decoration-none text-white">CONTACT</a></li>
+            <li class="hover-green d-inline-block d-sm-none border rounded px-2"><a href="#" class="text-decoration-none"><i class="text-secondary fas fa-bars"></i></a></li>
           </ul>
         </div>
       </nav>
@@ -37,31 +37,49 @@
     </header>
     <main>
       <section id="portfolio">
-        <div class="container text-center pt-4 pb-4">
+        <div class="container-sm text-center pt-4 pb-4">
           <h4>PORTFOLIO</h4>
           <div class="line-star mt-3">
             <span class="linee black d-inline-block rounded"></span>
             <i class="fs-2 align-middle fas fa-star"></i>
             <span class="linee black d-inline-block rounded"></span>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 mx-xl-5">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 my-3 mx-xl-5 g-3">
             <div class="col">
-              <img class="img-fluid rounded-3 my-3" src="./img/cabin.png" alt="Icona Cabina">
+              <div class="my_overlay position-relative">
+                <img class="img-fluid rounded-3 " src="./img/cabin.png" alt="Immagine Cabina" >
+                <div class="position-absolute overlay d-none rounded-3 top-0 start-0 end-0 bottom-0"><i class="text-white translate-middle position-absolute top-50 left-50 font70 fas fa-exclamation"></i></div>
+              </div>
             </div>
             <div class="col">
-              <img class="img-fluid rounded-3 my-3" src="./img/cake.png" alt="Icona Torta">
+              <div class="my_overlay position-relative">
+                <img class="img-fluid rounded-3 " src="./img/cake.png" alt="Immagine Torta" >
+                <div class="position-absolute overlay d-none rounded-3 top-0 start-0 end-0 bottom-0"><i class="text-white translate-middle position-absolute top-50 left-50 font70 fas fa-exclamation"></i></div>
+              </div>
             </div>
             <div class="col">
-              <img class="img-fluid rounded-3 my-3" src="./img/circus.png" alt="Icona Circo">
+              <div class="my_overlay position-relative">
+                <img class="img-fluid rounded-3 " src="./img/circus.png" alt="Immagine Circo" >
+                <div class="position-absolute overlay d-none rounded-3 top-0 start-0 end-0 bottom-0"><i class="text-white translate-middle position-absolute top-50 left-50 font70 fas fa-exclamation"></i></div>
+              </div>
             </div>
             <div class="col">
-              <img class="img-fluid rounded-3 my-3" src="./img/game.png" alt="Icona Gioco">
+              <div class="my_overlay position-relative">
+                <img class="img-fluid rounded-3 " src="./img/game.png" alt="Immagine Gioco" >
+                <div class="position-absolute overlay d-none rounded-3 top-0 start-0 end-0 bottom-0"><i class="text-white translate-middle position-absolute top-50 left-50 font70 fas fa-exclamation"></i></div>
+              </div>
             </div>
             <div class="col">
-              <img class="img-fluid rounded-3 my-3" src="./img/safe.png" alt="Icona Safe">
+              <div class="my_overlay position-relative">
+                <img class="img-fluid rounded-3 " src="./img/safe.png" alt="Immagine  " >
+                <div class="position-absolute overlay d-none rounded-3 top-0 start-0 end-0 bottom-0"><i class="text-white translate-middle position-absolute top-50 left-50 font70 fas fa-exclamation"></i></div>
+              </div>
             </div>
             <div class="col">
-              <img class="img-fluid rounded-3 my-3" src="./img/submarine.png" alt="Icona Sotto Marino">
+              <div class="my_overlay position-relative">
+                <img class="img-fluid rounded-3 " src="./img/submarine.png" alt="Immagine Sotto Marino" >
+                <div class="position-absolute overlay d-none rounded-3 top-0 start-0 end-0 bottom-0"><i class="text-white translate-middle position-absolute top-50 left-50 font70 fas fa-exclamation"></i></div>
+              </div>
             </div>
           </div>
         </div>
@@ -74,7 +92,7 @@
             <i class="fs-2 text-white align-middle fas fa-star"></i>
             <span class="little-linee white d-inline-block rounded"></span>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 mx-5 px-xl-5 text-start">
+          <div class="row row-cols-1 row-cols-sm-2 mx-5 px-xl-5 text-start">
             <div class="col">
               <p class="text-white">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional LEss stylesheet for easy customization.</p>
             </div>
@@ -118,8 +136,8 @@
       </section>
     </main>
     <footer class="background">
-      <div class="container">
-        <div class="row text-center row-cols-1 row-cols-md-3 mx-3 py-4">
+      <div class="container-md">
+        <div class="row text-center row-cols-1 row-cols-sm-3 mx-3 py-4">
           <div class="col text-white my-3">
             <span class="d-block">LOCATION</span>
             <span>2215 John Daniel Drive Clark, MO 54243</span>
@@ -141,7 +159,7 @@
           </div> 
           <div class="col text-white my-3">
             <span>ABOUT FREELANCER</span>
-            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#" class="text-decoration-none">Start Bootstrap</a>.</p>
+            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#" class="text-success text-decoration-none">Start Bootstrap</a>.</p>
           </div>
         </div>
       </div>

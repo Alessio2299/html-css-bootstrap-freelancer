@@ -1,9 +1,6 @@
 nav{
   background-color: rgb(44, 61, 80);
 }
-.fix{
-  height: 60px;
-}
 .jumbotron,
 #about{
   background-color: rgb(27, 187, 156);
@@ -11,6 +8,16 @@ nav{
 .linee{
   width: 15%;
   height: 4px;
+}
+.hover-green:hover{
+  background-color: rgb(27, 187, 156);
+  border: 1px solid #014901 !important;
+}
+.hover-green:hover i{
+  color: #fff !important;
+}
+.li-green:hover a{
+  color: rgb(27, 187, 156) !important;
 }
 .jumbotron img{
   height: 150px;
@@ -53,11 +60,8 @@ nav{
   color: #000 !important;
 }
 .col img:hover{
-  opacity: 0.3;
+  
   cursor: pointer;
-}
-.index{
-  z-index: 99;
 }
 .formfix{
   padding: 1rem 0 !important;
@@ -73,4 +77,13 @@ nav{
 }
 .fixtext:focus~label{
   transform: scale(.85) translateY(-0.5rem) !important;
+}
+.overlay{
+  background-color:rgba(27, 187, 75, 0.76) ;
+}
+.font70{
+  font-size: 70px;
+}
+.my_overlay:hover .overlay{
+  display: block !important;
 }
